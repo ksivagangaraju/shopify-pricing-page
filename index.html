@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopify Pricing Page</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="app-container">
+        <div style="display: flex; justify-content: center;">
+            <div class="monthly-yearly-container">
+                <button type="button" id="payMonthlyButton">Pay Monthly</button>
+                <button type="button" id="payYearlyButton">Pay Yearly (Save 25%)</button>
+            </div>
+        </div>
+        <div class="price-plan-buttons">
+            <button type="button" class="basic-button" id="basicButton">Basic</button>
+            <button type="button" class="shopify-button" id="shopifyButton">Shopify</button>
+            <button type="button" class="advanced-button" id="advancedButton">Advanced</button>
+        </div>
+        <div class="prices-container">
+            <div class="price-container" id="basicContainer">
+                <span class="recommend">MOST POPULAR</span>
+                <div class="card">
+                    <p class="price-heading">Basic</p>
+                    <p class="price-for">FOR INDIVIDUALS & SMALL BUSINESSES</p>
+                    <p class="price-description">Everything you need to create your store, ship products, and process payments</p>
+                    <div class="price">
+                        <p class="rupees" id="basicPrice"></p>
+                        <div class="inr-container">
+                            <span>INR</span>
+                            <span>/mo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="get-3-months">Get your first 3 months for ₹20/mo</div>
+                <div class="card">
+                    <p class="price-included">What's included on Basic</p>
+                    <ul>
+                        <li>Basic reports</li>
+                        <li>Up to 1,000 inventory locations</li>
+                        <li>2 staff accounts</li>
+                    </ul>
+                    <button type="button" class="button" id="buyBasic">Try for free</button>
+                </div>
+            </div>
+            <div class="price-container" id="shopifyContainer">
+                <div class="card">
+                    <p class="price-heading">Shopify</p>
+                    <p class="price-for">FOR SMALL BUSINESSES</p>
+                    <p class="price-description">Level up your business with professional reporting and more staff accounts</p>
+                    <div class="price">
+                        <p class="rupees" id="shopifyPrice"></p>
+                        <div class="inr-container">
+                            <span>INR</span>
+                            <span>/mo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="get-3-months">Get your first 3 months for ₹20/mo</div>
+                <div class="card">
+                    <p class="price-included">What's included on Shopify</p>
+                    <ul>
+                        <li>professional reports</li>
+                        <li>Up to 1,000 inventory locations</li>
+                        <li>5 staff accounts</li>
+                    </ul>
+                    <button type="button" class="button" id="buyShopify">Try for free</button>
+                </div>
+            </div>
+            <div class="price-container" id="advancedContainer">
+                <div class="card">
+                    <p class="price-heading">Advanced</p>
+                    <p class="price-for">FOR MEDIUM TO LARGE BUSINESS</p>
+                    <p class="price-description">Get the best of Shopify with custom reporting and our lowest transaction fees</p>
+                    <div class="price">
+                        <p class="rupees" id="advancedPrice"></p>
+                        <div class="inr-container">
+                            <span>INR</span>
+                            <span>/mo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="get-3-months">Get your first 3 months for ₹20/mo</div>
+                <div class="card">
+                    <p class="price-included">What's included on Advanced</p>
+                    <ul>
+                        <li>Custom report builder</li>
+                        <li>Up to 1,000 inventory locations</li>
+                        <li>15 staff accounts</li>
+                    </ul>
+                    <button type="button" class="button" id="buyAdvanced">Try for free</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
